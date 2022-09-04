@@ -21,3 +21,11 @@ In: 4
 ````
 Out: 6
 ````
+
+
+## References:
+https://quera.org/problemset/66861/
+
+https://www.sharif.edu/
+
+https://stackoverflow.com/questions/171765/what-is-the-best-way-to-get-all-the-divisors-of-a-number

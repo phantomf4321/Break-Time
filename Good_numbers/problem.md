@@ -23,6 +23,7 @@ Out: 6
 ````
 
 
+
 ## References:
 https://quera.org/problemset/66861/
 

@@ -15,6 +15,14 @@ fib(n) = fib(n-1) + fib(n-2) fib(n)=fib(n−1)+fib(n−2)
 
 Now, write a program that by taking a natural number nn as input, a string like s1, s2, ..., sn Print the + and - signs so that s_isbe positive if and only if the number ii is part of the Fibonacci sequence. Pay attention to the examples for better understanding.
 
+## Input
+The input contains only one line containing a natural number nn.
+
+1001≤n≤100
+
+## output
+In the only output line, print a string of length nn which is the answer to the problem.
+
 
 
 https://github.com/phantomf4321/Break-Time/tree/main/Fibonaccistring

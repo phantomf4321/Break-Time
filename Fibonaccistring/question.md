@@ -24,21 +24,21 @@ The input contains only one line containing a natural number nn.
 In the only output line, print a string of length nn which is the answer to the problem.
 
 ### Example 1
-'''
+````
 In: 15
-'''
+````
 
-'''
+````
 Out: +++-+--+----+--
-'''
+````
 ### Example 2
-'''
+````
 In: 4
-'''
+````
 
-'''
+````
 Out:+++-
-'''
+````
 
 ## references
 https://github.com/phantomf4321/Break-Time/tree/main/Fibonaccistring

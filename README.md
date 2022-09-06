@@ -7,4 +7,7 @@ In this repository, I collect solutions to interesting problems that I see durin
 - Numpy
 
 ### <a href="https://github.com/phantomf4321/Break-Time/tree/main/Fibonaccistring">Fibonacci String</a>
+- Fibonacci sequence
+
+- print('but', 'not', 'including', sep='')
 

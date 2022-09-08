@@ -48,8 +48,6 @@ int main()
     {
         cout << ans[counter1] << endl;
     }
-
-
     system("pause");
     return 0;
 }

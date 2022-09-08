@@ -45,9 +45,7 @@ int main()
         ans[counter1] = cal(l, r);
     }
     for (int counter1 = 0; counter1 < n; counter1++)
-    {
         cout << ans[counter1] << endl;
-    }
     system("pause");
     return 0;
 }

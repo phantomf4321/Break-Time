@@ -1,6 +1,5 @@
 import math
 import numpy as np
-
 def CS(number):
  root = math.sqrt(number)
  if int(root + 0.5) ** 2 == number:

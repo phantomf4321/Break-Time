@@ -11,3 +11,5 @@ In this repository, I collect solutions to interesting problems that I see durin
 
 - print('but', 'not', 'including', sep='')
 
+
+### <a href="https://github.com/phantomf4321/Break-Time/blob/main/Perfect%20sqauer/question.md">Perfect Square</a>

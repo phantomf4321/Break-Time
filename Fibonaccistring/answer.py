@@ -6,7 +6,6 @@ def fibo(N):
  # 0 and 1 both are fibonacci numbers
  if (N == 0 or N == 1):
   return(True)
-
  else:
   # generating the fibonacci numbers until the generated number is less than  N
   while f3 < N:

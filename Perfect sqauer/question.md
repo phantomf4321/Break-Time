@@ -26,3 +26,10 @@ l, r 1≤l,r≤10
 
 ## Output
 The output of your program should contain qq lines, in the iith line you should print the answer to the iith question.
+
+
+## References
+https://djangocentral.com/python-program-to-check-if-a-number-is-perfect-square/
+https://likegeeks.com/numpy-array-tutorial/#:~:text=this%3A%20import%20numpy-,Add%20array%20element,method%20of%20the%20NumPy%20module.&text=The%20values%20will%20be%20appended,is%20going%20to%20be%20displayed.
+https://stackoverflow.com/questions/4162815/how-to-read-two-inputs-separated-by-space-in-a-single-line
+https://www.codegrepper.com/code-examples/python/convert+array+to+integer+python

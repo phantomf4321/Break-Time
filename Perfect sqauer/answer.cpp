@@ -3,7 +3,6 @@
 #include <cmath>
 #include <cstdio>
 using namespace std;
-
 bool isPerfectSquare(long double x)
 {
     // Find floating point value of

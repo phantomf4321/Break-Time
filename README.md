@@ -17,3 +17,5 @@ In this repository, I collect solutions to interesting problems that I see durin
 
 
 https://online.visual-paradigm.com/diagrams/solutions/free-use-case-diagram-tool/
+
+https://www.lucidchart.com/pages/uml-use-case-diagram

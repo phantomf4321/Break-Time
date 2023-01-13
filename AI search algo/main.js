@@ -7,8 +7,7 @@ class Cell
         grid.children[this.Y].children[this.X].classList.remove("animate")
         grid.children[this.Y].children[this.X].classList = "cell " + this.State + ` x${this.X}-y${this.Y}`;
         grid.children[this.Y].children[this.X].style.backgroundPosition = `${this.X * horizontal_cells * 0}px ${this.Y * vertical_cells / 4}px`;
-        if(this.State != "null") grid.children[this.Y].children[this.X].classList.add("animate"); 
-        
+        if(this.State != "null") grid.children[this.Y].children[this.X].classList.add("animate");  
     }
     update_neighbours(grid, diagonal=true)
     {

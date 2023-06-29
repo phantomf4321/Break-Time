@@ -19,13 +19,4 @@ In this repository, I collect solutions to interesting problems that I see durin
 ### <a href="https://github.com/phantomf4321/Break-Time/blob/main/Perfect%20sqauer/question.md">Perfect Square</a>
 
 
-
-https://online.visual-paradigm.com/diagrams/solutions/free-use-case-diagram-tool/
-
-https://www.lucidchart.com/pages/uml-use-case-diagram
-
-
-https://docs.google.com/document/d/10mgRQ9zHDe1JWnq2qrswPIapf-DxVOODyaB-xXEAGHM/edit
-
-
-http://94-182-133-10.cprapid.com:2083/
+https://bootstrapmade.com/knight-free-bootstrap-theme/#download

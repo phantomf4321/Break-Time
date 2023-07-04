@@ -28,7 +28,7 @@ class DB{
         }
     }
 }
-class Visitor{
+class User{
 
     function login($username, $password){
         // Create connection

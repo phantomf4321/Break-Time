@@ -50,7 +50,12 @@ class Visitor{
                 return 2;
         	    exit();
         	}else{
-        		$sql = "SELECT * FROM visitors WHERE username='$uname' AND password='$pass'";
+        		$sql = "SELECT username, password
+                        FROM users
+                        WHERE 
+                        username='$uname' AND
+                        password='$pass'";
+                
         		$result = mysqli_query($conn, $sql);
         		if (mysqli_num_rows($result) === 1) {
         			$row = mysqli_fetch_assoc($result);

@@ -26,3 +26,13 @@ https://bootstrapmade.com/knight-free-bootstrap-theme/#download
 
 
 http://meet.google.com/tfe-pgpd-vde
+
+
+
+اطلاعات دسترسی به دامنه .com:
+ https://manage.opensrs.net/index.cgi?action=logout
+ Domain Name: 
+torfehpooshan.com
+User Name: 
+torfehpooshan
+Password:     Torfehpooshan+-1400

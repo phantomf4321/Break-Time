@@ -77,5 +77,34 @@ class User{
     	
         }
     }// end login...
+
+function save_user($data){
+        // Create connection
+        $db = new DB;
+        $conn = $db->connect();
+        // Check connection
+        if ($conn == 0) {
+            return(101);
+        }else{
+            // Connected Successfuly!
+            $douplicate = "SELECT culumn FROM user WHERE phone='$data[i]'";
+            $result = $conn->query($douplicate);
+            if ($result->num_rows > 0) {
+                // Douplicated Record!
+                return(102);
+            } else {
+                $password = hash('sha512', $phone);
+                $save_user = "INSERT INTO user (dtat)VALUES ($data)";
+                if ($conn->query($save_user) === TRUE) {
+                  return(1);// New record created successfully!
+                } else {
+                  return(103);// Probmel in isertion!
+                }
+            }
+
+        }
+    }//end save_user...
+
+    
 }
 ?>

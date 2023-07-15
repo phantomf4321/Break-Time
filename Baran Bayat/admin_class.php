@@ -51,7 +51,7 @@ class User{
         	    exit();
         	}else{
         		$sql = "SELECT username, password
-                        FROM users
+                        FROM user
                         WHERE 
                         username='$uname' AND
                         password='$pass'";
@@ -104,6 +104,43 @@ function save_user($data){
 
         }
     }//end save_user...
+
+
+    function see_user(){
+        // Create connection
+        $db = new DB;
+        $conn = $db->connect();
+        // Check connection
+        if ($conn == 0) {
+            return(101);
+        }else{
+            // Connected Successfuly!
+            $resault = array();
+            
+            $visitor = "SELECT id, name, phone, type FROM user";
+            $result = $conn->query($visitor);
+            if ($result->num_rows > 0) {
+                while($row = $result->fetch_assoc()) {
+                    $curr = array();
+                    $id = $row['id'];
+                    $name = $row['name'];
+                    $phone = $row['phone'];
+                    $type = $row['type'];
+                    array_push($curr, $id);
+                    array_push($curr, $name);
+                    array_push($curr, $phone);
+                    array_push($curr, $type);
+                    
+                    array_push($resault, $curr);
+                }
+                
+                return($resault);
+            } else {
+                return("No data!");
+            }
+
+        }
+    }//end see_user...
 
     
 }

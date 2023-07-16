@@ -199,7 +199,42 @@ function save_user($data){
             }
         }
     }// end upload_bill...
-
-    
+   
 }
+
+
+
+if(isset($_POST['bill'])){
+    
+    $target_file = basename($_FILES["myfile"]["name"]);
+    $uploadOk = 1;
+    $imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+    $name = date("Ymd-H:i:s");
+    $filename = $name . "." . $imageFileType;
+    $file = $_FILES['myfile']['tmp_name'];
+    $size = $_FILES['myfile']['size'];
+    
+    $box_id = $_POST['box_id'];
+    $deposit = $_POST['deposit'];
+    $type = $_POST['type'];
+    
+    //echo $filename . " " . $deposit . " " . $type . "</br>";
+    echo $box_id;
+    $o1 = new Orders;
+    $costumer_id = $o1->get_costumer($box_id);
+    $visitor_id = $o1->get_visitor($box_id);
+    $school_id = $o1->get_school($box_id);
+    
+    $resault = $o1->upload_bill($filename, $box_id, $costumer_id, $visitor_id, $type, $deposit, $size, $file);
+    if($resault == 1){
+        $s1 = new SMS;
+        include("jdf");
+        $msg1 = "رسید پرداخت بیعانعه به صورت " . $type . " مبلغ:" . "\n" . $deposit . " تومان" . "\n" . jdate("Y/m/d H:i:s");
+        $s1->send($costumer_id, $msg1);
+        
+        header("Location: index.php?page=box&school_id=$school_id");
+        
+    }
+}
+    
 ?>

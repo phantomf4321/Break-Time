@@ -149,6 +149,57 @@ function save_user($data){
         }
     }//end see_user...
 
+
+    function upload_bill($filename, $box_id, $costumer_id, $visitor_id, $type, $cost, $size, $file){
+        // Create connection
+        $db = new DB;
+        $conn = $db->connect();
+        // Check connection
+        if ($conn == 0) {
+            return(101);
+        }else{
+            $sql = "SELECT * FROM files";
+            $result = mysqli_query($conn, $sql);
+            //$files = mysqli_fetch_all($result, MYSQLI_ASSOC);
+            
+            $destination = 'bill/' . $filename;
+            
+            // get the file extension
+            $extension = pathinfo($filename, PATHINFO_EXTENSION);
+            
+            
+            if (!in_array($extension, ['jpeg', 'png', 'jpg'])) {
+                return 3;
+            } elseif ($_FILES['myfile']['size'] > 90000000) { // file shouldn't be larger than 9Megabyte
+                return 4;
+            } else {
+                
+                $imageQuality = 10;
+                // move the uploaded (temporary) file to the specified destination
+                if (move_uploaded_file($file, $destination)) {
+                    compressImage($destination, $destination, $imageQuality);
+                    include("jdf.php");
+                    $time = persianToEnglish(jdate("H:i:s"));
+                    $date = persianToEnglish(jdate("Y/m/d"));
+                    $cost = persianToEnglish($cost);
+                    $o1 = new Orders;
+                    $update = $o1->change_box_state($box_id, 3);
+                    if($update == 1){
+                        $sql3 = "INSERT INTO bill (name, box_id, costumer_id, visitor_id, type, cost, size, downloads, time, date) VALUES ('$filename', '$box_id', '$costumer_id', '$visitor_id', '$type', '$cost', '$size', 0, '$time', '$date')";
+                        if (mysqli_query($conn, $sql3)) {
+                            return 1;
+                        }else{
+                            echo "Error: " . $sql3 . "<br>" . $conn->error;
+                            //return 5;
+                        }
+                    }
+                } else {
+                   return 2;
+                }
+            }
+        }
+    }// end upload_bill...
+
     
 }
 ?>

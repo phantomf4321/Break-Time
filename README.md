@@ -5,7 +5,7 @@ In this repository, I collect solutions to interesting problems that I see durin
   <img src="https://imgurl.ir/uploads/b6030_ah.gif"/>
 </p>
 
-meet.google.com/bvc-rkzq-jai
+
 
 ### <a href="https://github.com/phantomf4321/Break-Time/tree/main/Good_numbers">Good Numbers</a>
 - Number Theory

@@ -1,44 +1,23 @@
-# B-reak-Time
-In this repository, I collect solutions to interesting problems that I see during the day.
-https://meet.google.com/vpj-swhz-hpn
-<p align="center">
-  <img src="https://imgurl.ir/uploads/b6030_ah.gif"/>
-</p>
+09155034852
 
+09382020515
 
+09151196479
 
-### <a href="https://github.com/phantomf4321/Break-Time/tree/main/Good_numbers">Good Numbers</a>
-- Number Theory
-- Divisors Theory
-- Numpy
+09151508712
 
-### <a href="https://github.com/phantomf4321/Break-Time/tree/main/Fibonaccistring">Fibonacci String</a>
-- Fibonacci sequence
+09155224613
 
-- print('but', 'not', 'including', sep='')
+09151084229
 
+ 09105157200
+ 
+09153073035
 
-### <a href="https://github.com/phantomf4321/Break-Time/blob/main/Perfect%20sqauer/question.md">Perfect Square</a>
+09155050822
 
+09151434009
 
-https://bootstrapmade.com/knight-free-bootstrap-theme/#download
+09153598580
 
-
-https://meet.google.com/amt-xvjm-rst
-
-
-
-https://digiform.ir/w78d37eaf
-
-
-اطلاعات دسترسی به دامنه .com:
- https://manage.opensrs.net/index.cgi?action=logout
- Domain Name: 
-torfehpooshan.com
-User Name: 
-torfehpooshan
-Password:     Torfehpooshan+-1400
-
-
-
-<a referrerpolicy="origin" target="_blank" href="https://trustseal.enamad.ir/?id=358129&amp;Code=Lu1JExiEcgQDQdcX3xbc"><img referrerpolicy="origin" src="https://Trustseal.eNamad.ir/logo.aspx?id=358129&amp;Code=Lu1JExiEcgQDQdcX3xbc" alt="" style="cursor:pointer" id="Lu1JExiEcgQDQdcX3xbc"></a>
+09153250049
